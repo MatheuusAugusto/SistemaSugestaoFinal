@@ -41,7 +41,18 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CredencialDAO.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\SistemaSugestao.BO\SistemaSugestao.BO.csproj">
+      <Project>{434a22ad-9b32-4afd-bdcb-9a11dac8090d}</Project>
+      <Name>SistemaSugestao.BO</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SistemaSugestao.VO\SistemaSugestao.VO.csproj">
+      <Project>{46a33ae5-dfc4-4d33-9678-be955609c690}</Project>
+      <Name>SistemaSugestao.VO</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

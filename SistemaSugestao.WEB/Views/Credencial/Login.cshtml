@@ -1,0 +1,20 @@
+﻿@model SistemaSugestao.VO.Credencial
+@{
+    ViewBag.Title = "Login";
+    Layout = "~/Views/Shared/_LayoutPadrao.cshtml";
+}
+
+<fieldset>
+    <legend>Login</legend>
+    @using (Html.BeginForm())
+    {
+        <div>
+            @Html.LabelFor(loginCredencial => loginCredencial.Login)
+            @Html.TextBoxFor(loginCredencial => loginCredencial.Login, new { @class = "form-control form-group", placeholder = "Login" })
+        </div>
+        <div>
+            @Html.LabelFor(loginCredencial => loginCredencial.Senha)
+            @Html.PasswordFor(loginCredencial => loginCredencial.Senha, new { @class = "form-control form-group", placeholder = "Senha" })
+        </div>
+    }
+</fieldset>
